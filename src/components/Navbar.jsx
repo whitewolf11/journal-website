@@ -7,7 +7,7 @@ function Navbar() {
       <Link to="/">Home</Link>
       <Link to="/archives">Archives</Link>
       <Link to="/publication">Publication</Link>
-      <Link to="/public-ethics">Public Ethics</Link>
+      <Link to="/publication-ethics">Publication Ethics</Link>
       <Link to="/journal-ethics">Journal Ethics</Link>
       <Link to="/submit">Submit Manuscript</Link>
       <Link to="/contact">Contact</Link>

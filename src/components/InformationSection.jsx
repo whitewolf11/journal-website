@@ -4,17 +4,17 @@ function InformationSection() {
   return (
     <section className="py-16 bg-white">
 
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="max-w-6xl mx-auto text-center px-4">
 
         <h2 className="text-3xl font-bold mb-10">
           Information
         </h2>
 
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
           <Link
             to="/readers"
-            className="border p-6 rounded-lg hover:shadow-lg"
+            className="border p-6 rounded-lg hover:shadow-lg transition block"
           >
             <h3 className="text-xl font-semibold">For Readers</h3>
             <p className="mt-3 text-gray-600">
@@ -24,7 +24,7 @@ function InformationSection() {
 
           <Link
             to="/authors"
-            className="border p-6 rounded-lg hover:shadow-lg"
+            className="border p-6 rounded-lg hover:shadow-lg transition block"
           >
             <h3 className="text-xl font-semibold">For Authors</h3>
             <p className="mt-3 text-gray-600">
@@ -34,7 +34,7 @@ function InformationSection() {
 
           <Link
             to="/librarians"
-            className="border p-6 rounded-lg hover:shadow-lg"
+            className="border p-6 rounded-lg hover:shadow-lg transition block"
           >
             <h3 className="text-xl font-semibold">For Librarians</h3>
             <p className="mt-3 text-gray-600">

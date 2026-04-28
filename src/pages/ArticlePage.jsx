@@ -4,7 +4,7 @@ import { articles } from "../data/articles"
 function ArticlePage() {
   const { id } = useParams()
 
-  const article = articles.find((a) => a.id === parseInt(id))
+  const article = articles.find((a) => a.id === id)
 
   if (!article) {
     return (
@@ -56,14 +56,18 @@ function ArticlePage() {
 
       {/* PDF Download */}
       <div className="mt-8">
-
-        <a
-          href={article.pdf}
-          className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700"
-        >
-          Download PDF
-        </a>
-
+        {article.pdf ? (
+          <a
+            href={article.pdf}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+          >
+            Download PDF
+          </a>
+        ) : (
+          <p className="text-gray-500">PDF not available</p>
+        )}
       </div>
 
     </div>
